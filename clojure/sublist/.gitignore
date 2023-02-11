@@ -1,0 +1,8 @@
+.exercism/
+target/
+.lein-failures
+.clj-kondo/.cache
+.clj-kondo/
+.calva/
+.cpcache/
+.lsp/
