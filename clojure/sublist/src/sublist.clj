@@ -8,4 +8,4 @@
     (= list1 list2) :equal
     (sublist? list1 list2) :sublist
     (sublist? list2 list1) :superlist
-    :default :unequal))
+    :else :unequal))
