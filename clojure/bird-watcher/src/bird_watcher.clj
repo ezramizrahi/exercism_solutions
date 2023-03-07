@@ -16,9 +16,10 @@
   (reduce + 0 (take n birds)))
 
 (defn busy-days [birds]
-  (count (filter (fn [x]
-                   (>= 5 x))
-                birds)))
+  (count (filter #(>= % 5) birds)))
+
+;; (defn odd-week? [birds]
+;;   (= (partition 2 (drop-last birds)) (vec (repeat 3 '(1 0)))))
 
 (defn odd-week? [birds]
-  (some odd? birds))
+  (= birds [1 0 1 0 1 0 1]))
